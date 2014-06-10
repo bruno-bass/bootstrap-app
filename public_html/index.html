@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pagina Inicial (teste)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="js/jquery/jquery.min.js"></script>    
+        <script src="js/bootstrap.min.js"></script>
+        <script type='text/javascript'>
+            $(document).ready(function(){
+                $('a').click(function(){
+                    $('img').css("width", "500px").css("height","500px");
+                    $('a').after('<h1>fechar</h1>');
+                    $('h1').click(function(){
+                        $('img').css('width', '200px').css('height', '200px');
+                        $('h1').hide();
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p >
+        <img class="thumbnail" src="teste.png" style="width: 200px; height: 200px;" alt="teste" />  
+        </p>
+        <a href='#'>Large!</a>
+         
+        
+        
+    </body>
+</html>
